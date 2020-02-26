@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Medicamentos Controlados</title>
+</head>
+
+<body>
+    <header class="headernav">
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-brand mb-0 h1"><img src="image/logo.png" class="img-responsive" width="40px">Finalizando compra</span>
+          </nav>
+    </header>
+    <main class="container">
+        <form id="checkout" class="row mt-6">
+
+            <div class="campos col-md-6">
+                <header class="bg-secondary text-light p-2">
+                    Dados do Medico:
+                </header>
+                <div class="p-2">
+                    <div class="info form-group">
+                        <label for="nomeMedico">NOME DO MEDICO</label>
+                        <input class="form-control" id="nomeMedico" type="text" name="nomeMedico" placeholder="Nome Completo do Medico"
+                            required>
+                    </div>
+
+                    <div class="info form-group">
+                        <label for="crm">CRM DO MEDICO</label>
+                        <input class="form-control" id="crm" type="text" name="crm" placeholder="Digite o CRM do Medico" required>
+                    </div>
+
+                    <div class="info form-group">
+                        <label for="dataReceita">DATA DA RECEITA:</label>
+                        <input class="form-control" id="dataReceita" type="date" name="dataReceita"
+                            required>
+                    </div>
+
+                    <div class="info form-group">
+                        <label for="qtdCaixas">DIGITE A QUANTIDADE DE CAIXAS</label>
+                        <input class="form-control" id="qtdCaixas" type="number" name="qtdCaixas" placeholder="Digite a quantidade de caixas" required>
+                    </div>
+                </div>
+            </div>
+            <div class="campos col-md-6">
+                <header class="bg-secondary text-light p-2">
+                    DADOS DO PACIENTE
+                </header>
+                <div class="p-2">
+
+                    <div class="info form-group">
+                        <label for="nomePac">NOME DO PACIENTE</label>
+                        <input class="form-control" id="nomePac" type="text" name="nomePac" placeholder="Digite o nome do paciente"
+                            required>
+                    </div>
+
+                    <div class="info form-group">
+                        <label for="cpf">CPF DO PACIENTE</label>
+                        <input class="form-control" id="cpf" type="text" name="cpf" placeholder="Digite o CPF do paciente" required>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <Label for="pacienteNasc">DATA DE NASCIMENTO DO PACIENTE</Label>
+                            <input id="pacienteNasc" type="month" class="form-control" name="pacienteNasc"
+                                required>
+                        </div>
+                    </div>
+                    <div class="info form-group row">
+                        <div class="col-12">
+                            <label>SEXO</label>
+                            <select class="form-control">
+                                <option value="Selecione" disabled selected>SELECIONE</option>
+                                <option value="M">MASCULINO</option>
+                                <option value="F">FEMININO</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="info form-group row">
+                        <div class="col-12">
+                            <label>FORMAS DE ENVIO</label>
+                            <select class="form-control">
+                                <option value="Selecione" disabled selected>SELECIONE</option>
+                                <option value="Rápido">WHATSAPP</option>
+                                <option value="Anexar">ANEXAR ARQUIVO</option>
+                                <option value="Email">ENVIAR POR EMAIL</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success">Finalizar</button>
+            </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
